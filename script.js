@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const enteredPassword = passwordInput.value;
 
       // Replace 'yourStaticPassword' with your desired password
-      const correctPassword = '160623';
+      const correctPassword = '16062023';
 
       if (enteredPassword === correctPassword) {
           passwordPrompt.style.display = "none";
