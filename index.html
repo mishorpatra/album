@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+
+    <title>Our Romantic Moments</title>
+</head>
+<body>
+
+    <header>
+        <h1>Our Romantic Moments</h1>
+    </header>
+    <div id="passwordPrompt" class="password-prompt">
+      <label for="password">Enter the password:</label>
+      <input type="password" id="password">
+      <button onclick="checkPassword()">Submit</button>
+  </div>
+  <div id="content" style="display: none;">
+
+    <div class="quote-section">
+      <blockquote class="quote">
+          "You are my today and all of my tomorrows."
+      </blockquote>
+      <blockquote class="quote">
+          "In your arms is where I belong."
+      </blockquote>
+  </div>
+
+    <div class="gallery">
+        <!-- Add your photos here -->
+        <div class="photo" onclick="openModal();currentSlide(1)">
+            <img src="./assets/pic1.jpg" alt="Photo 1">
+        </div>
+        <div class="photo" onclick="openModal();currentSlide(2)">
+            <img src="./assets/pic2.jpg" alt="Photo 2">
+        </div>
+        <!-- Add more photos as needed -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <!-- Add your photo slides here -->
+                <div class="mySlides">
+                    <img src="./assets/pic1.jpg" alt="Photo 1">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/pic2.jpg" alt="Photo 2">
+                </div>
+                <!-- Add more slides as needed -->
+
+                <!-- Navigation arrows -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
